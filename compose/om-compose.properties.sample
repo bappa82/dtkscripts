@@ -1,0 +1,31 @@
+# Licensed Materials - Property of IBM
+# IBM Sterling Order Management (5725-D10), IBM Order Management (5737-D18)
+# (C) Copyright IBM Corp. 2018, 2020 All Rights Reserved.
+# US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+
+## You do not need to override or change any property in this file for normal usecases. Each property already assumes a default value.
+## For advanced usage, remove .sample from the file name, uncomment a property and change the value to override it. Check Knowledge Center for more info.
+## For MacOS, override HOST_OS to mac, and set JAVA_HOME to JDK home in MacOS
+
+## Enable this if you have read all licenses and accept them and want to run setup without prompt
+## You can read all licenses by running './om-compose.sh license'
+#DTK_LICENSE=accept
+
+#OM_INSTALL_LOCALIZATION=true
+#OM_LOCALES=zh_CN,zh_TW,fr_FR,ja_JP,pt_BR,ko_KR,ru_RU,tr_TR,it_IT,es_ES,de_DE,pl_PL
+
+#DB_PORT=50000
+#MQ_PORT=1414
+#AP_HTTP_PORT=9080
+#AP_HTTPS_PORT=9443
+
+## Note: also change in docker/appserver/jvm.options
+#AP_DEBUG_PORT=8383
+
+#AP_WAR_FILES=wsc,smcfs,sbc,sfs,sma,isccs,isf
+#AP_SKIP_ANGULAR_MINIFICATION=false
+#STORE_DISABLE_LEGACY_APP=N
+
+## Set the following properties for MacOS
+#HOST_OS=mac
+#JAVA_HOME=

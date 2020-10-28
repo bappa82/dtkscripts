@@ -1,0 +1,44 @@
+# Licensed Materials - Property of IBM
+# IBM Sterling Order Management (5725-D10), IBM Order Management (5737-D18)
+# (C) Copyright IBM Corp. 2018, 2020 All Rights Reserved.
+# US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+
+################# System properties - don't change #################
+jdbcService.db2Pool.url=jdbc:db2://DB_HOST:DB_PORT/DB_DATA
+jdbcService.db2Pool.catalog=DB_DATA
+jdbcService.db2Pool.dbname=DB_DATA
+jdbcService.db2Pool.user=DB_USER
+jdbcService.db2Pool.password=DB_PASS
+jdbcService.db2Pool.schema=DB_SCHEMA_OWNER
+yfs.yfs.install.localecode=en_US_UTC
+
+iv_integration.tenantId=IV_TENANTID
+iv_integration.clientId=IV_CLIENTID
+iv_integration.secret=IV_SECRET
+iv_integration.baseUrl=IV_BASEURL
+yfs.iv.integration.demand.providerurl=file://MQ_JNDI_DIR
+yfs.iv.integration.senddemandupdates.event.queue=IV_DEMAND_QUEUE
+yfs.iv.integration.demand.qcf=MQ_CONNECTION_FACTORY_NAME
+yfs.iv.integration.supply.providerurl=file://MQ_JNDI_DIR
+yfs.iv.integration.sendsupplyupdates.event.queue=IV_SUPPLY_QUEUE
+yfs.iv.integration.supply.qcf=MQ_CONNECTION_FACTORY_NAME
+yfs.iv.integration.icf=com.sun.jndi.fscontext.RefFSContextFactory 
+
+yfs.yfs.sim.enabled=SIM_ENABLE
+yfs.yfs.sim.endpointurl=SIM_ENDPOINTURL
+yfs.yfs.iv.endpointurl=IV_ENDPOINTURL
+yfs.yfs.sim.clientId=SIM_CLIENTID
+yfs.yfs.sim.secret=SIM_SECRET
+yfs.yfs.sim.oauthEndpoint=auth/oauth2/token
+yfs.yfs.jwt.create.issuer=omoc
+yfs.yfs.jwt.create.audience=sim
+yfs.yfs.jwt.create.expiration=30
+yfs.yfs.jwt.create.claims=simTenantId,ivTenantId,envId,jwtId
+yfs.yfs.jwt.create.claims.envId.value=DTK_ID
+yfs.yfs.jwt.create.claims.jwtId.value=oms-DTK_ID
+yfs.yfs.jwt.create.claims.simTenantId.value=SIM_TENANTID
+yfs.yfs.jwt.create.claims.ivTenantId.value=IV_TENANTID
+yfs.yfs.jwt.create.pk.alias=JWT_PK_ALIAS
+yfs.yfs.jwt.create.algorithm=RS256
+####################################################################
+

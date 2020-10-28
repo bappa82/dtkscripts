@@ -1,0 +1,26 @@
+# Licensed Materials - Property of IBM
+# IBM Sterling Order Management (5725-D10), IBM Order Management (5737-D18)
+# (C) Copyright IBM Corp. 2020 All Rights Reserved.
+# US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+
+## You should not override or change any property in this file. 
+## In case you need to point to different tenant, you can copy the corresponding properties to om-compose.properties and override it there.
+
+#DTK_ID=
+
+######## IV Integration properties ########
+#IV_ENABLE=Y
+#IV_TENANTID=
+#IV_CLIENTID=
+#IV_SECRET=
+#IV_BASEURL=
+#IV_ENDPOINTURL=${IV_BASEURL}/${IV_TENANTID}/v1
+
+######## SIM Integration properties #######
+#SIM_ENABLE=Y
+#SIM_TENANTID=
+#SIM_CLIENTID=
+#SIM_SECRET=
+#SIM_ENDPOINTURL=
+#JWT_PK_ALIAS=
+
